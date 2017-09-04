@@ -9,7 +9,6 @@ let state = {
     refresh:false,
     defaultIndex:'',
     isshowfacerecognition:false,
-    defaultActive:'',
 };
 
 const mutations = {
@@ -21,9 +20,6 @@ const mutations = {
     },
     changedefaultIndex:function(state,n){
         state.defaultIndex=n
-    },
-    changedefaultActive:function(state,n){
-        state.defaultActive=n
     },
     changeIsShowFaceRecognition:function(state,n){
         state.isshowfacerecognition=n
@@ -40,9 +36,6 @@ const actions = {
     },
     defaultIndexAction:function({commit},n){
         commit('changedefaultIndex',n)
-    },
-    defaultActiveAction:function({commit},n){
-        commit('changedefaultActive',n)
     },
     isshowfacerecognitionAction:function({commit},n){
         commit('changeIsShowFaceRecognition',n)
@@ -62,9 +55,6 @@ const getters = {
     },
     isshowfacerecognition:function(){
         return state.isshowfacerecognition
-    },
-    GetDefaultActive(){
-        return state.defaultActive
     }
 };
 

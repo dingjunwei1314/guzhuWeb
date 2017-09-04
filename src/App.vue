@@ -7,7 +7,10 @@
 <script>
 import './assets/css/common.css'
 export default {
-  name: 'app'
+  name: 'app',
+  data(){
+    return{}
+  }
 }
 </script>
 

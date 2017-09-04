@@ -43,20 +43,61 @@ button:disabled span{cursor:not-allowed;}
   display:inline-block;margin-right:3px;background:#FB5E4B;width:6px;height:6px;border-radius:50%;position:relative;top:-1px;
 }
 /* 超出部分为省略号 */
-.radingMsg .myOverElli{
+.myOverElli{
   overflow:hidden;white-space:nowrap;text-overflow:ellipsis
 }
-.begin:hover{color:#fff;background-color: #feb339;border-color: #feb339;}
-.begin:focus{color:#fff;background: #fe9039;border-color: #fe9039;}
+/* 小徽标的统一样式 */
+.little_logo{
+  font-size:14px;
+  font-style:normal;
+  display:inline-block;
+  background-color:#fe9039;
+  box-sizing:border-box;
+  height:20px;
+  line-height:20px;
+  padding:0 3px;
+  position:relative;
+  top:-2px;
+  color:#fff;
+  border-radius:3px;
+}
+.little_logo1{
+  font-size:12px;
+  font-style:normal;
+  display:inline-block;
+  border:1px solid #DDDDDD;
+  box-sizing:border-box;
+  height:20px;
+  line-height:18px;
+  padding:0 8px;
+  position:relative;
+  top:-2px;
+  color:#666;
+  border-radius:3px;
+}
+/* button的统一样式 88px宽 */
+.qianRuBtn{
+  width:88px;
+  text-align:center;
+  font-size:14px;
+  margin-top:10px;
+}
+/* 小徽标的统一样式 当字数较多时*/
+.qianRuBtnP{
+  padding-left:10px;
+  padding-right:10px;
+  font-size:14px;
+  margin-top:10px;
+}
+.begin:hover,.begin:focus,.begin:focus:hover{color:#fff;background-color: #feb339!important;border-color: #feb339!important}
+.begin:disabled{ background-color:#EEF1F6!important;border-color: #D1DBE5!important;}
 .begin.active:hover{color:#fff;background: #feb339;border-color: #feb339;}
 .bea_scroll::-webkit-scrollbar-thumb{background: rgb(255,172,82);width: 3px}
 .bea_scroll::-webkit-scrollbar-track{background: #ccc;width: 3px}
 .bea_scroll::-webkit-scrollbar{width: 5px}
-
-
 .animated {
-  -webkit-animation-duration: .8s;
-  animation-duration: .8s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -175,126 +216,15 @@ button:disabled span{cursor:not-allowed;}
   }
 }
 
-@-webkit-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-
-@-webkit-keyframes fadeOutRight {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-}
-
-@keyframes fadeOutRight {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-}
-
-.fadeOutRight {
-  -webkit-animation-name: fadeOutRight;
-  animation-name: fadeOutRight;
-}
-
-@-webkit-keyframes fadeOutRightBig {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
-  }
-}
-
-
-.fadeInRight {
-  -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight;
-}
-
 .bounceOutUp {
   -webkit-animation-name: bounceOutUp;
   animation-name: bounceOutUp;
 }
+.ui-sys-bar{
+    -webkit-app-region: drag;
+}
+.ui-sys-bar1{
+    -webkit-app-region: no-drag;
+}
 
 .el-button--primary:focus, .el-button--primary:hover{background: #feb339;border-color: #feb339}
-
-@-webkit-keyframes fadeOutRight {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-}
-
-@keyframes fadeOutRight {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-}
-
-.fadeOutRight {
-  -webkit-animation-name: fadeOutRight;
-  animation-name: fadeOutRight;
-}
-
-@-webkit-keyframes fadeOutRightBig {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
-  }
-}
